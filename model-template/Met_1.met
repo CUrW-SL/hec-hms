@@ -1,0 +1,106 @@
+Meteorology: Met 1
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:24:27
+     Version: 4.1
+     Unit System: Metric
+     Set Missing Data to Default: Yes
+     Precipitation Method: Weighted Gages
+     Short-Wave Radiation Method: None
+     Long-Wave Radiation Method: None
+     Snowmelt Method: None
+     Evapotranspiration Method: Monthly Evaporation
+     Use Basin Model: Basin 1
+End:
+
+Gage: Awissawella
+     Type: Recording
+End:
+
+Gage: Colombo
+     Type: Recording
+End:
+
+Precip Method Parameters: Weighted Gages
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:24:27
+     Use HEC1 Weighting Scheme: Yes
+     Use Indexing: No
+     Allow Depth Override: No
+End:
+
+Evapotranspiration Method Parameters: Monthly Evaporation
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:24:27
+End:
+
+Subbasin: Lower
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:24:27
+     Vapor Pressure Type: Relative Humidity
+     Gage: Colombo
+     Volume Weight: 1
+     Temporal Distribution Weight: 1
+
+     Begin Et:
+     Pan Evaporation: 113
+     Pan Evaporation: 107
+     Pan Evaporation: 112
+     Pan Evaporation: 105
+     Pan Evaporation: 105
+     Pan Evaporation: 105
+     Pan Evaporation: 103
+     Pan Evaporation: 91
+     Pan Evaporation: 98
+     Pan Evaporation: 111
+     Pan Evaporation: 110
+     Pan Evaporation: 117
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     End Et:
+End:
+
+Subbasin: Upper
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:24:27
+     Vapor Pressure Type: Relative Humidity
+     Gage: Awissawella
+     Volume Weight: 1.000
+     Temporal Distribution Weight: 1.000
+
+     Begin Et:
+     Pan Evaporation: 113
+     Pan Evaporation: 107
+     Pan Evaporation: 112
+     Pan Evaporation: 105
+     Pan Evaporation: 105
+     Pan Evaporation: 105
+     Pan Evaporation: 103
+     Pan Evaporation: 91
+     Pan Evaporation: 98
+     Pan Evaporation: 111
+     Pan Evaporation: 110
+     Pan Evaporation: 117
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     Evapotranspiration Coefficient: 0.7
+     End Et:
+End:

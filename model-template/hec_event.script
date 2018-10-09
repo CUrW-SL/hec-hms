@@ -1,0 +1,4 @@
+from hms.model.JythonHms import *
+OpenProject("hec_event", "../hec_model")
+Compute("Run 1")
+Exit(1)

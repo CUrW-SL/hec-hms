@@ -1,0 +1,17 @@
+Run: Run 1
+     Default Description: Yes
+     Log File: Run_1.log
+     DSS File: hec_event_run.dss
+     Last Modified Date: 29 May 2017
+     Last Modified Time: 12:53:09
+     Last Execution Date: 15 May 2017
+     Last Execution Time: 11:48:25
+     Basin: Basin 1
+     Precip: Met 1
+     Control: Control 1
+     Save State Name: state_<date-time>
+     Save State Date: 1 May 2017
+     Save State Time: 24:00
+     Start State Name: initial-condition
+End:
+

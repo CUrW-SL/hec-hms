@@ -1,0 +1,46 @@
+Gage Manager: hec_event
+     Version: 4.1
+     Filepath Separator: /
+End:
+
+Gage: Awissawella
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 11:49:53
+     Units System: SI
+     Reference Height Units: Meters
+     Reference Height: 10.0
+     Gage Type: Precipitation
+     Units: MM
+     Data Source Type: Modifiable DSS
+     Variant: Variant-1
+       Last Variant Modified Date: 15 May 2017
+       Last Variant Modified Time: 10:46:53
+       Default Variant: Yes
+       DSS File Name: hec_event_input.dss
+       DSS Pathname: //AWISSAWELLA/PRECIP-INC//1HOUR/GAGE/
+       Start Time: 1 May 2017, 00:00
+       End Time: 3 May 2017, 23:00
+     End Variant: Variant-1
+End:
+
+Gage: Colombo
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 11:50:00
+     Units System: SI
+     Reference Height Units: Meters
+     Reference Height: 10.0
+     Gage Type: Precipitation
+     Precipitation Type: Incremental
+     Units: MM
+     Data Source Type: Modifiable DSS
+     Variant: Variant-1
+       Last Variant Modified Date: 15 May 2017
+       Last Variant Modified Time: 10:47:03
+       Default Variant: Yes
+       DSS File Name: hec_event_input.dss
+       DSS Pathname: //COLOMBO/PRECIP-INC//1HOUR/GAGE/
+       Start Time: 1 May 2017, 00:00
+       End Time: 3 May 2017, 23:00
+     End Variant: Variant-1
+End:
+

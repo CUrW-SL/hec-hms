@@ -1,0 +1,140 @@
+Basin: Basin 1
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:16:01
+     Version: 4.1
+     Filepath Separator: /
+     Unit System: Metric
+     Missing Flow To Zero: No
+     Enable Flow Ratio: No
+     Compute Local Flow At Junctions: No
+
+     Enable Sediment Routing: No
+
+     Enable Quality Routing: No
+End:
+
+Subbasin: Upper
+     Last Modified Date: 29 May 2017
+     Last Modified Time: 15:00:40
+     Canvas X: 2557.003257328991
+     Canvas Y: 3371.3355048859935
+     Area: 1740
+     Downstream: Hanwella
+
+     Canopy: Simple
+     Plant Uptake Method: Default Tension-Factor
+     Initial Canopy Storage Percent: 0
+     Canopy Storage Capacity: 10
+     Crop Coefficient: 1.0
+     End Canopy:
+
+     Surface: Simple
+     Initial Surface Storage Percent: 0
+     Surface Storage Capacity: 0
+     Surface Albedo: 0.20
+     End Surface:
+
+     LossRate: Soil Moisture Account
+     Percent Impervious Area: 40.0
+     Initial Soil Storage Percent: 70
+     Initial Gw1 Storage Percent: 45
+     Initial Gw2 Storage Percent: 82
+     Soil Maximum Infiltration: 10
+     Soil Storage Capacity: 125
+     Soil Tension Capacity: 75
+     Soil Maximum Percolation: 1
+     Groundwater 1 Storage Capacity: 100
+     Groundwater 1 Routing Coefficient: 100
+     Groundwater 1 Maximum Percolation: 1
+     Groundwater 2 Storage Capacity: 150
+     Groundwater 2 Routing Coefficient: 1
+     Groundwater 2 Maximum Percolation: 1
+
+     Transform: Clark
+     Time of Concentration: 18
+     Storage Coefficient: 65
+     Time Area Method: Default
+
+     Baseflow: Recession
+     Recession Factor: 0.54
+     Initial Baseflow: 100
+     Threshold Flow to Peak Ratio: 0.4
+End:
+
+Junction: Hanwella
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:23:16
+     Canvas X: 48.85993485342078
+     Canvas Y: 211.72638436482066
+     Downstream: Hanwella to Sea
+End:
+
+Subbasin: Lower
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:23:16
+     Canvas X: -4283.387622149837
+     Canvas Y: 2068.4039087947885
+     Area: 540
+     Downstream: Sea
+
+     Canopy: None
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 10.0
+     Initial Loss: 30
+     Constant Loss Rate: 0.05
+
+     Transform: Clark
+     Time of Concentration: 20
+     Storage Coefficient: 25
+     Time Area Method: Default
+
+     Baseflow: Recession
+     Recession Factor: 0.9
+     Initial Baseflow: 80
+     Threshold Flow to Peak Ratio: 1
+End:
+
+Reach: Hanwella to Sea
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:23:16
+     Canvas X: -4177.777777777778
+     Canvas Y: -2777.7777777777783
+     From Canvas X: 48.85993485342078
+     From Canvas Y: 211.72638436482066
+     Downstream: Sea
+
+     Route: Lag
+     Lag: 40
+     Channel Loss: None
+End:
+
+Sink: Sea
+     Last Modified Date: 15 May 2017
+     Last Modified Time: 10:23:16
+     Canvas X: -4177.777777777778
+     Canvas Y: -2777.7777777777783
+End:
+
+Basin Schematic Properties:
+     Last View N: 5000.0
+     Last View S: -5000.0
+     Last View W: -5000.0
+     Last View E: 5000.0
+     Maximum View N: 5000.0
+     Maximum View S: -5000.0
+     Maximum View W: -5000.0
+     Maximum View E: 5000.0
+     Extent Method: Elements
+     Buffer: 0
+     Draw Icons: Yes
+     Draw Icon Labels: Name
+     Draw Map Objects: No
+     Draw Gridlines: Yes
+     Draw Flow Direction: No
+     Fix Element Locations: No
+     Fix Hydrologic Order: No
+End:

@@ -1,0 +1,27 @@
+Project: hec_event
+     Description: 
+     Version: 4.1
+     Filepath Separator: /
+     DSS File Name: hec_event.dss
+     Time Zone ID: Asia/Colombo
+End:
+
+Precipitation: Met 1
+     Filename: Met_1.met
+     Description: 
+     Last Modified Date: 
+     Last Modified Time: 
+End:
+
+Basin: Basin 1
+     Filename: Basin_1.basin
+     Description: 
+     Last Modified Date: 29 May 2017
+     Last Modified Time: 15:00:40
+End:
+
+Control: Control 1
+     FileName: Control_1.control
+     Description: 
+End:
+
