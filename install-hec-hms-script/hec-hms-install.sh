@@ -24,10 +24,12 @@ rm -f hec-dssvue201-linux.bin.zip hec-dssvue201.bin
 wget 'https://excellmedia.dl.sourceforge.net/project/jython/jython/2.5.0/jython_installer-2.5.0.jar'
 ./hec-dssvue201/java/bin/java -jar jython_installer-2.5.0.jar -s -d ./jython
 
-
-cp ./jython/jython.jar ./jython/jythonlib.jar
-zip -r ./jython/jythonlib.jar Lib
-mv ./jython/jythonlib.jar ./hec-dssvue201/jar/sys
+cd ./jython
+cp -rf Lib lib
+zip -r jythonlib.jar lib
+cd ../
+cp ./jython/jythonlib.jar ./hec-dssvue201/jar/sys
+cp ./jython/jython.jar ./hec-dssvue201/jar/sys
 rm -f ./jython_installer-2.5.0.jar
 rm -rf ./jython
 
@@ -39,5 +41,16 @@ wget "https://pypi.python.org/packages/f3/e0/8949888568534046c5c847d26c89a05c05f
 tar -zxvf simplejson-2.5.2.tar.gz
 rm -f simplejson-2.5.2.tar.gz
 
-# Finally go into <hec-hms Home>/hec-dssvue201/hec-dssvue.sh
+# Go into <hec-hms Home>/hec-dssvue201/hec-dssvue.sh
 # Change the PROG_ROOT to point to the <hec-hms Home>/hec-dssvue201
+
+# Since server does not have a display, add the following before where the hec-dssvue.sh check for DISPLAY
+# Server Doesn't have a DISPLAY, thus this logic isn't working. Bypass
+# DISPLAY=":0"
+
+
+# Normally <hec-hms Home>/hec-hms-421/hec-hms.sh's shebang is not correct.
+# it appears as #/bin/bash, correct it as #!/bin/bash
+
+# Go into <hec-hms Home>/hec-hms-421/hec-hms.sh
+# Change DIR to point to the <hec-hms Home>/hec-hms-421

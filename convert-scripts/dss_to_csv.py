@@ -31,7 +31,7 @@ try:
     flow = output_dss.get('//HANWELLA/FLOW//1HOUR/RUN:RUN 1/', 1)
     if flow.numberValues == 0:
         print 'No Flow Data! Exiting the program...'
-        exit(1)
+        sys.exit(1)
     else:
         csv_writer = csv.writer(open(options.csvfp, 'w'), delimiter=',', quotechar='|')
 

@@ -45,7 +45,7 @@ def _run_conversion_script(python_script_fp, csv_fp, dss_fp):
     :return: boolean, True if success else False
     """
     dssvue_sh = path.join(HEC_DSSVUE_HOME, HEC_DSSVUE_SH)
-    bash_command = '{dssvue_sh} {dss_to_csv_py} --csvfp {csv_fp} --dssfp {dss_fp}' \
-        .format(dssvue_sh=dssvue_sh, dss_to_csv_py=python_script_fp, csv_fp=csv_fp, dss_fp=dss_fp)
+    bash_command = '{dssvue_sh} {python_script} --csvfp {csv_fp} --dssfp {dss_fp}' \
+        .format(dssvue_sh=dssvue_sh, python_script=python_script_fp, csv_fp=csv_fp, dss_fp=dss_fp)
     ret_code = subprocess.call(bash_command, shell=True)
     return True if ret_code == 0 else False
